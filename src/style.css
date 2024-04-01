@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-RussoOne text-white bg-[#020D19] overflow-x-hidden;
+  }
+
+  input {
+    @apply bg-[#1B2017] border border-[#FFC700CC] outline-none ring-0 placeholder:text-[#D1D1D1] text-[#F1F1F1] text-lg h-[60px] px-[26px];
+  }
+
+  .container-main {
+    @apply max-w-[1368px] w-full xl:px-0 px-2.5;
+  }
+}
+
+@layer components {
+  .drop-shadow-text-main {
+    text-shadow: -0 -0.5px 0 #ffc80010, 0 -0.5px 0 #ffc80010,
+      -0 0.5px 0 #ffc80010, 0 0.5px 0 #ffc80010, -1px -0 0 #ffc80010,
+      1px -0 0 #ffc80010, -1px 0 0 #ffc80010, 1px 0 0 #ffc80010,
+      -1px -0.5px 0 #ffc80010, 1px -0.5px 0 #ffc80010, -1px 0.5px 0 #ffc80010,
+      1px 0.5px 0 #ffc80010, -1px -0.5px 0 #ffc80010, 1px -0.5px 0 #ffc80010,
+      -1px 0.5px 0 #ffc80010, 1px 0.5px 0 #ffc80010;
+  }
+
+  .bg-custom-card-select-schedule:nth-child(4n + 4),
+  .bg-custom-card-select-schedule:nth-child(4n + 3) {
+    background-color: #1b2017;
+  }
+
+  .radial-text {
+    background: linear-gradient(0deg, #ffffff00, #ffffff00),
+      radial-gradient(
+        230.93% 230.93% at 102.01% 2.03%,
+        #f9ed32 0%,
+        #ee2a7b 36%,
+        #d22a8a 44%,
+        #8b2ab2 60%,
+        #1b2af0 83%,
+        #002aff 88%
+      );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+}
