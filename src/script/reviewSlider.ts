@@ -2,9 +2,18 @@ import Swiper from "swiper";
 import "swiper/css";
 
 const reviewsSlider = new Swiper("#reviewsSlider", {
-  slidesPerView: 4,
-  spaceBetween: 24,
-  loop: true,
+  breakpoints: {
+    1368: {
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 8,
+      watchSlidesProgress: true,
+    },
+  },
 });
 
 // Добавление обработчиков событий для стрелок вперед и назад
@@ -25,6 +34,7 @@ nextButtonReviewsSlider.addEventListener("click", function () {
 const previewReviewSlider = new Swiper("#previewReviewSlider", {
   slidesPerView: 1,
   loop: true,
+  effect: "fade", // Устанавливаем эффект fade
 });
 
 const prevButtonPreviewReviewSlider = document.querySelector(

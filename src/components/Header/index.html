@@ -1,11 +1,43 @@
-<header class="bg-[#000A16] relative z-[2]">
-  <load src="src/components/Header/Decorate.html"/>
-  <div class="container-main mx-auto flex items-center gap-[67px] relative z-[1]">
+<header class="bg-[#000A16] relative z-[2] xl:pt-0 pt-2.5">
+  <load src="src/components/Header/Decorate.html" />
+  <div
+    class="container-main mx-auto flex items-center xl:justify-start justify-between xl:gap-[67px] gap-4 relative z-[1]"
+  >
     <a class="flex-shrink-0" href="/">
-      <img class="w-[127px] h-[127px]" src="logo.png" alt="logo">
+      <img
+        class="xl:w-[127px] w-[69px] xl:h-[127px] h-[69px]"
+        src="logo.png"
+        alt="logo"
+      />
     </a>
 
-    <div class="w-full">
+    <div class="xl:hidden flex flex-col gap-1">
+      <a class="text-[#BCB8B8] text-base" href="tel:+375293637936"
+        >+375 29 3637936</a
+      >
+
+      <a class="text-[#BCB8B8] text-base" href="tel:+375297055680"
+        >+375 29 7055680</a
+      >
+    </div>
+
+    <button class="flex-shrink-0 xl:hidden block">
+      <svg
+        width="24"
+        height="16"
+        viewBox="0 0 24 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 1C0 0.447716 0.447715 0 1 0H23C23.5523 0 24 0.447715 24 1V1.66667C24 2.21895 23.5523 2.66667 23 2.66667H1C0.447716 2.66667 0 2.21895 0 1.66667V1ZM0 7.66667C0 7.11438 0.447715 6.66667 1 6.66667H23C23.5523 6.66667 24 7.11438 24 7.66667V8.33333C24 8.88562 23.5523 9.33333 23 9.33333H1C0.447716 9.33333 0 8.88562 0 8.33333V7.66667ZM0 14.3333C0 13.781 0.447715 13.3333 1 13.3333H23C23.5523 13.3333 24 13.781 24 14.3333V15C24 15.5523 23.5523 16 23 16H1C0.447716 16 0 15.5523 0 15V14.3333Z"
+          fill="#FFC700"
+          fill-opacity="0.8"
+        />
+      </svg>
+    </button>
+
+    <div class="w-full xl:block hidden">
       <load src="src/components/Header/UpBlock.html" />
       <load src="src/components/Header/NavMenu.html" />
     </div>

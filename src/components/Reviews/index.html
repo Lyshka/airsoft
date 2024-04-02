@@ -1,111 +1,227 @@
-<section class="pt-[130px] relative">
-  <div class="space-y-[50px] container-main mx-auto">
-    <h2 class="uppercase text-[44px] text-center">Отзывы и благодарности</h2>
+<section class="xl:pt-[130px] pt-[50px] relative">
+  <div class="xl:space-y-[50px] space-y-[17px] container-main mx-auto">
+    <h2 class="xl:text-center text-left">Отзывы и благодарности</h2>
 
     <div class="w-full relative">
       <button
-        class="border border-[#FFC70066] rounded-full flex justify-center items-center rotate-180 bg-black/20 backdrop-blur w-[66px] h-[66px] absolute left-2.5 -translate-x-full top-1/2 -translate-y-1/2 z-[2] prevReviewsSlider">
-        <svg width="28" height="46" viewBox="0 0 28 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        class="border border-[#FFC70066] rounded-full xl:flex hidden justify-center items-center rotate-180 bg-black/20 backdrop-blur w-[66px] h-[66px] absolute left-2.5 -translate-x-full top-1/2 -translate-y-1/2 z-[2] prevReviewsSlider"
+      >
+        <svg
+          width="28"
+          height="46"
+          viewBox="0 0 28 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M4.41651 -2.01072e-06L27.4165 23L4.4165 46L0.334006 41.9175L19.2515 23L0.334009 4.0825L4.41651 -2.01072e-06Z"
-            fill="#FFC700" />
+            fill="#FFC700"
+          />
         </svg>
       </button>
 
       <button
-        class="border border-[#FFC70066] rounded-full flex justify-center items-center bg-black/20 backdrop-blur w-[66px] h-[66px] absolute right-2.5 translate-x-full top-1/2 -translate-y-1/2 z-[2] nextReviewsSlider">
-        <svg width="28" height="46" viewBox="0 0 28 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        class="border border-[#FFC70066] rounded-full xl:flex hidden justify-center items-center bg-black/20 backdrop-blur w-[66px] h-[66px] absolute right-2.5 translate-x-full top-1/2 -translate-y-1/2 z-[2] nextReviewsSlider"
+      >
+        <svg
+          width="28"
+          height="46"
+          viewBox="0 0 28 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M4.41651 -2.01072e-06L27.4165 23L4.4165 46L0.334006 41.9175L19.2515 23L0.334009 4.0825L4.41651 -2.01072e-06Z"
-            fill="#FFC700" />
+            fill="#FFC700"
+          />
         </svg>
       </button>
 
-      <div class="w-full overflow-hidden" id="reviewsSlider">
+      <div class="w-full xl:overflow-hidden overflow-x-scroll scrollbar scrollbar-thumb-[#FFC700CC] scrollbar-track-[#434343]" id="reviewsSlider">
         <div class="swiper-wrapper">
-          <div data-slide="0" class="swiper-slide reviewSlide cursor-pointer group relative">
+          <div
+            data-slide="0"
+            class="swiper-slide reviewSlide cursor-pointer group relative"
+          >
             <svg
               class="group-hover:opacity-100 opacity-0 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1] transition-all duration-300 absolute"
-              width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M19.7233 18.4619L19.4312 18.8126L19.754 19.1354L26.4804 25.8619L25.8619 26.4804L19.1354 19.754L18.8126 19.4312L18.4619 19.7233C16.5182 21.3424 14.0252 22.1497 11.5015 21.9774C8.97773 21.8052 6.61756 20.6665 4.91193 18.7984C3.20631 16.9303 2.28657 14.4766 2.34403 11.9476C2.40149 9.41862 3.43174 7.00916 5.22045 5.22045C7.00916 3.43174 9.41862 2.40149 11.9476 2.34403C14.4766 2.28657 16.9303 3.20631 18.7984 4.91193C20.6665 6.61756 21.8052 8.97773 21.9774 11.5015C22.1497 14.0252 21.3424 16.5182 19.7233 18.4619ZM3.25002 12.1875L3.25002 12.1881C3.25265 14.5575 4.19506 16.8291 5.87049 18.5045C7.54592 20.18 9.81754 21.1224 12.187 21.125H12.1875C13.9552 21.125 15.6832 20.6008 17.1529 19.6188C18.6227 18.6367 19.7682 17.2409 20.4447 15.6077C21.1212 13.9746 21.2981 12.1776 20.9533 10.4439C20.6084 8.71019 19.7572 7.11768 18.5073 5.86775C17.2574 4.61782 15.6648 3.7666 13.9311 3.42175C12.1974 3.07689 10.4004 3.25389 8.76728 3.93034C7.13417 4.6068 5.73832 5.75234 4.75626 7.22211C3.77419 8.69187 3.25002 10.4198 3.25002 12.1875Z"
-                fill="#1B2017" stroke="#1B2017" />
-              <path d="M12 8V12M12 16V12M12 12H16H8" stroke="#1B2017" stroke-width="1.5" />
+                fill="#1B2017"
+                stroke="#1B2017"
+              />
+              <path
+                d="M12 8V12M12 16V12M12 12H16H8"
+                stroke="#1B2017"
+                stroke-width="1.5"
+              />
             </svg>
 
             <div
-              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]">
-              &nbsp;</div>
+              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]"
+            >
+              &nbsp;
+            </div>
 
-            <img class="w-full h-[450px]" src="reviewSlide1.png" alt="Отзыв">
+            <img
+              class="w-full xl:h-[450px] h-[209px]"
+              src="reviewSlide1.png"
+              alt="Отзыв"
+            />
           </div>
 
-          <div data-slide="1" class="swiper-slide reviewSlide cursor-pointer group relative">
+          <div
+            data-slide="1"
+            class="swiper-slide reviewSlide cursor-pointer group relative"
+          >
             <svg
               class="group-hover:opacity-100 opacity-0 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1] transition-all duration-300 absolute"
-              width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M19.7233 18.4619L19.4312 18.8126L19.754 19.1354L26.4804 25.8619L25.8619 26.4804L19.1354 19.754L18.8126 19.4312L18.4619 19.7233C16.5182 21.3424 14.0252 22.1497 11.5015 21.9774C8.97773 21.8052 6.61756 20.6665 4.91193 18.7984C3.20631 16.9303 2.28657 14.4766 2.34403 11.9476C2.40149 9.41862 3.43174 7.00916 5.22045 5.22045C7.00916 3.43174 9.41862 2.40149 11.9476 2.34403C14.4766 2.28657 16.9303 3.20631 18.7984 4.91193C20.6665 6.61756 21.8052 8.97773 21.9774 11.5015C22.1497 14.0252 21.3424 16.5182 19.7233 18.4619ZM3.25002 12.1875L3.25002 12.1881C3.25265 14.5575 4.19506 16.8291 5.87049 18.5045C7.54592 20.18 9.81754 21.1224 12.187 21.125H12.1875C13.9552 21.125 15.6832 20.6008 17.1529 19.6188C18.6227 18.6367 19.7682 17.2409 20.4447 15.6077C21.1212 13.9746 21.2981 12.1776 20.9533 10.4439C20.6084 8.71019 19.7572 7.11768 18.5073 5.86775C17.2574 4.61782 15.6648 3.7666 13.9311 3.42175C12.1974 3.07689 10.4004 3.25389 8.76728 3.93034C7.13417 4.6068 5.73832 5.75234 4.75626 7.22211C3.77419 8.69187 3.25002 10.4198 3.25002 12.1875Z"
-                fill="#1B2017" stroke="#1B2017" />
-              <path d="M12 8V12M12 16V12M12 12H16H8" stroke="#1B2017" stroke-width="1.5" />
+                fill="#1B2017"
+                stroke="#1B2017"
+              />
+              <path
+                d="M12 8V12M12 16V12M12 12H16H8"
+                stroke="#1B2017"
+                stroke-width="1.5"
+              />
             </svg>
 
             <div
-              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]">
-              &nbsp;</div>
+              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]"
+            >
+              &nbsp;
+            </div>
 
-            <img class="w-full h-[450px]" src="reviewSlide2.png" alt="Отзыв">
+            <img
+              class="w-full xl:h-[450px] h-[209px]"
+              src="reviewSlide2.png"
+              alt="Отзыв"
+            />
           </div>
 
-          <div data-slide="2" class="swiper-slide reviewSlide cursor-pointer group relative">
+          <div
+            data-slide="2"
+            class="swiper-slide reviewSlide cursor-pointer group relative"
+          >
             <svg
               class="group-hover:opacity-100 opacity-0 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1] transition-all duration-300 absolute"
-              width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M19.7233 18.4619L19.4312 18.8126L19.754 19.1354L26.4804 25.8619L25.8619 26.4804L19.1354 19.754L18.8126 19.4312L18.4619 19.7233C16.5182 21.3424 14.0252 22.1497 11.5015 21.9774C8.97773 21.8052 6.61756 20.6665 4.91193 18.7984C3.20631 16.9303 2.28657 14.4766 2.34403 11.9476C2.40149 9.41862 3.43174 7.00916 5.22045 5.22045C7.00916 3.43174 9.41862 2.40149 11.9476 2.34403C14.4766 2.28657 16.9303 3.20631 18.7984 4.91193C20.6665 6.61756 21.8052 8.97773 21.9774 11.5015C22.1497 14.0252 21.3424 16.5182 19.7233 18.4619ZM3.25002 12.1875L3.25002 12.1881C3.25265 14.5575 4.19506 16.8291 5.87049 18.5045C7.54592 20.18 9.81754 21.1224 12.187 21.125H12.1875C13.9552 21.125 15.6832 20.6008 17.1529 19.6188C18.6227 18.6367 19.7682 17.2409 20.4447 15.6077C21.1212 13.9746 21.2981 12.1776 20.9533 10.4439C20.6084 8.71019 19.7572 7.11768 18.5073 5.86775C17.2574 4.61782 15.6648 3.7666 13.9311 3.42175C12.1974 3.07689 10.4004 3.25389 8.76728 3.93034C7.13417 4.6068 5.73832 5.75234 4.75626 7.22211C3.77419 8.69187 3.25002 10.4198 3.25002 12.1875Z"
-                fill="#1B2017" stroke="#1B2017" />
-              <path d="M12 8V12M12 16V12M12 12H16H8" stroke="#1B2017" stroke-width="1.5" />
+                fill="#1B2017"
+                stroke="#1B2017"
+              />
+              <path
+                d="M12 8V12M12 16V12M12 12H16H8"
+                stroke="#1B2017"
+                stroke-width="1.5"
+              />
             </svg>
 
             <div
-              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]">
-              &nbsp;</div>
+              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]"
+            >
+              &nbsp;
+            </div>
 
-            <img class="w-full h-[450px]" src="reviewSlide1.png" alt="Отзыв">
+            <img
+              class="w-full xl:h-[450px] h-[209px]"
+              src="reviewSlide1.png"
+              alt="Отзыв"
+            />
           </div>
 
-          <div data-slide="3" class="swiper-slide reviewSlide cursor-pointer group relative">
+          <div
+            data-slide="3"
+            class="swiper-slide reviewSlide cursor-pointer group relative"
+          >
             <svg
               class="group-hover:opacity-100 opacity-0 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1] transition-all duration-300 absolute"
-              width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M19.7233 18.4619L19.4312 18.8126L19.754 19.1354L26.4804 25.8619L25.8619 26.4804L19.1354 19.754L18.8126 19.4312L18.4619 19.7233C16.5182 21.3424 14.0252 22.1497 11.5015 21.9774C8.97773 21.8052 6.61756 20.6665 4.91193 18.7984C3.20631 16.9303 2.28657 14.4766 2.34403 11.9476C2.40149 9.41862 3.43174 7.00916 5.22045 5.22045C7.00916 3.43174 9.41862 2.40149 11.9476 2.34403C14.4766 2.28657 16.9303 3.20631 18.7984 4.91193C20.6665 6.61756 21.8052 8.97773 21.9774 11.5015C22.1497 14.0252 21.3424 16.5182 19.7233 18.4619ZM3.25002 12.1875L3.25002 12.1881C3.25265 14.5575 4.19506 16.8291 5.87049 18.5045C7.54592 20.18 9.81754 21.1224 12.187 21.125H12.1875C13.9552 21.125 15.6832 20.6008 17.1529 19.6188C18.6227 18.6367 19.7682 17.2409 20.4447 15.6077C21.1212 13.9746 21.2981 12.1776 20.9533 10.4439C20.6084 8.71019 19.7572 7.11768 18.5073 5.86775C17.2574 4.61782 15.6648 3.7666 13.9311 3.42175C12.1974 3.07689 10.4004 3.25389 8.76728 3.93034C7.13417 4.6068 5.73832 5.75234 4.75626 7.22211C3.77419 8.69187 3.25002 10.4198 3.25002 12.1875Z"
-                fill="#1B2017" stroke="#1B2017" />
-              <path d="M12 8V12M12 16V12M12 12H16H8" stroke="#1B2017" stroke-width="1.5" />
+                fill="#1B2017"
+                stroke="#1B2017"
+              />
+              <path
+                d="M12 8V12M12 16V12M12 12H16H8"
+                stroke="#1B2017"
+                stroke-width="1.5"
+              />
             </svg>
 
             <div
-              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]">
-              &nbsp;</div>
+              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]"
+            >
+              &nbsp;
+            </div>
 
-            <img class="w-full h-[450px]" src="reviewSlide2.png" alt="Отзыв">
+            <img
+              class="w-full xl:h-[450px] h-[209px]"
+              src="reviewSlide2.png"
+              alt="Отзыв"
+            />
           </div>
 
-          <div data-slide="4" class="swiper-slide reviewSlide cursor-pointer group relative">
+          <div
+            data-slide="4"
+            class="swiper-slide reviewSlide cursor-pointer group relative"
+          >
             <svg
               class="group-hover:opacity-100 opacity-0 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1] transition-all duration-300 absolute"
-              width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M19.7233 18.4619L19.4312 18.8126L19.754 19.1354L26.4804 25.8619L25.8619 26.4804L19.1354 19.754L18.8126 19.4312L18.4619 19.7233C16.5182 21.3424 14.0252 22.1497 11.5015 21.9774C8.97773 21.8052 6.61756 20.6665 4.91193 18.7984C3.20631 16.9303 2.28657 14.4766 2.34403 11.9476C2.40149 9.41862 3.43174 7.00916 5.22045 5.22045C7.00916 3.43174 9.41862 2.40149 11.9476 2.34403C14.4766 2.28657 16.9303 3.20631 18.7984 4.91193C20.6665 6.61756 21.8052 8.97773 21.9774 11.5015C22.1497 14.0252 21.3424 16.5182 19.7233 18.4619ZM3.25002 12.1875L3.25002 12.1881C3.25265 14.5575 4.19506 16.8291 5.87049 18.5045C7.54592 20.18 9.81754 21.1224 12.187 21.125H12.1875C13.9552 21.125 15.6832 20.6008 17.1529 19.6188C18.6227 18.6367 19.7682 17.2409 20.4447 15.6077C21.1212 13.9746 21.2981 12.1776 20.9533 10.4439C20.6084 8.71019 19.7572 7.11768 18.5073 5.86775C17.2574 4.61782 15.6648 3.7666 13.9311 3.42175C12.1974 3.07689 10.4004 3.25389 8.76728 3.93034C7.13417 4.6068 5.73832 5.75234 4.75626 7.22211C3.77419 8.69187 3.25002 10.4198 3.25002 12.1875Z"
-                fill="#1B2017" stroke="#1B2017" />
-              <path d="M12 8V12M12 16V12M12 12H16H8" stroke="#1B2017" stroke-width="1.5" />
+                fill="#1B2017"
+                stroke="#1B2017"
+              />
+              <path
+                d="M12 8V12M12 16V12M12 12H16H8"
+                stroke="#1B2017"
+                stroke-width="1.5"
+              />
             </svg>
 
             <div
-              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]">
-              &nbsp;</div>
+              class="w-full h-full bg-black/10 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute z-[2]"
+            >
+              &nbsp;
+            </div>
 
-            <img class="w-full h-[450px]" src="reviewSlide1.png" alt="Отзыв">
+            <img
+              class="w-full xl:h-[450px] h-[209px]"
+              src="reviewSlide1.png"
+              alt="Отзыв"
+            />
           </div>
         </div>
       </div>

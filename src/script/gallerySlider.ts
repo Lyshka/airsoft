@@ -28,6 +28,7 @@ nextButtonReviewsSlider.addEventListener("click", function () {
 const previewGalleryMainSlider = new Swiper("#previewGalleryMainSlider", {
   slidesPerView: 1,
   loop: true,
+  effect: "fade", // Устанавливаем эффект fade
 });
 
 const prevPreviewGalleryMainSlider = document.querySelector(
