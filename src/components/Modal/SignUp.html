@@ -1,0 +1,46 @@
+<section id="modalSignUp"
+  class="fixed formAndResponseModal duration-300 transition-all -translate-y-full opacity-0 top-0 h-screen w-full bg-[#020D1966] backdrop-blur flex justify-center items-center z-[2]">
+  <div
+    class="max-w-[762px] w-full bg-[#020D1966] flex flex-col justify-center items-center py-[100px] gap-[30px] relative">
+    <button class="closeModal absolute right-9 top-[25px]">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_2034_446)">
+          <path d="M1 1L23 23M1 23L23 1" stroke="#FFC700" stroke-opacity="0.8" stroke-width="3" />
+        </g>
+        <defs>
+          <clipPath id="clip0_2034_446">
+            <rect width="24" height="24" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </button>
+
+    <p class="text-[#FFC700] text-[44px] uppercase">Записаться</p>
+
+    <form class="space-y-[50px]">
+      <div class="flex flex-col gap-5">
+        <input name="name" type="text" placeholder="Ваше имя">
+        <input class="phone-input" name="tel" type="tel" placeholder="+375 (  )">
+
+        <div class="flex items-center gap-2.5">
+          <div class="w-4 h-4 bg-[#FFC7001A] flex-shrink-0 flex justify-center items-center relative containerCheckbox">
+            <svg class="iconCheckBox opacity-0 transition-all duration-300 active" width="14" height="11"
+              viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 5.21053L4.72414 9L13 1" stroke="#FFC700" stroke-opacity="0.8" stroke-width="2" />
+            </svg>
+
+            <input id="conf" name="conf" checked type="checkbox" class="absolute w-full h-full opacity-0">
+          </div>
+
+          <label class="text-[#D1D1D1] text-sm" for="conf">Соглашаюсь с <a class="underline">Политикой обработки
+              персональных
+              данных</a></label>
+        </div>
+      </div>
+
+      <button
+        class="bg-[#FFC700] rounded-[3px] py-[15px] px-[60px] flex justify-center items-center text-[#2A2A2A] text-base uppercase shadowButtonSubmitForm"
+        type="submit">заказать звонок</button>
+    </form>
+  </div>
+</section>

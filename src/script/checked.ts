@@ -1,15 +1,15 @@
 const containerCheckboxElements = [
-  ...document.querySelectorAll("containerCheckbox"),
-] as HTMLInputElement[];
+  ...document.querySelectorAll(".containerCheckbox"),
+] as HTMLElement[];
 
 containerCheckboxElements.map((containerCheckbox) => {
-  containerCheckbox.onchange = () => {
-    const inputElement = containerCheckbox.querySelector(
-      'input[type="checkbox"]'
-    );
-    const iconCheckBox =
-      containerCheckbox.querySelector(".iconCheckBox");
-  };
+  const inputElement = containerCheckbox.querySelector(
+    'input[type="checkbox"]'
+  ) as HTMLInputElement;
 
-  input.clas;
+  inputElement.onchange = () => {
+    const iconCheckBox = containerCheckbox.querySelector(".iconCheckBox");
+
+    iconCheckBox?.classList.toggle("active");
+  };
 });
