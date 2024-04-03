@@ -10,9 +10,13 @@
   @apply overflow-visible !z-[2] opacity-100;
 }
 
+#headerMobileMenu.open {
+  @apply top-[79px] translate-y-0;
+}
+
 @layer base {
   html {
-    @apply font-RussoOne text-white bg-[#020D19] overflow-x-hidden;
+    @apply font-RussoOne text-white bg-[#020D19] overflow-x-hidden scroll-smooth;
   }
 
   input {

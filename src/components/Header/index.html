@@ -21,7 +21,7 @@
       >
     </div>
 
-    <button class="flex-shrink-0 xl:hidden block">
+    <button id="openMobileMenu" class="flex-shrink-0 xl:hidden block">
       <svg
         width="24"
         height="16"
@@ -37,9 +37,36 @@
       </svg>
     </button>
 
+    <button class="hidden" id="closeMobileMenu">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_2034_1679)">
+          <path
+            d="M12 12L22 22M12 12L2 2M12 12L2 22M12 12L22 2"
+            stroke="#FFC700"
+            stroke-opacity="0.8"
+            stroke-width="2.6"
+            stroke-linecap="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_2034_1679">
+            <rect width="24" height="24" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </button>
+
     <div class="w-full xl:block hidden">
       <load src="src/components/Header/UpBlock.html" />
       <load src="src/components/Header/NavMenu.html" />
     </div>
   </div>
 </header>
+
+<load src="src/components/Header/Mobile.html" />

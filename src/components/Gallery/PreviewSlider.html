@@ -1,6 +1,6 @@
 <section id="galleryMainModal"
-  class="absolute z-[-1] overflow-hidden opacity-0 top-0 left-0 h-screen w-screen bg-[#020D1966] backdrop-blur flex justify-center mx-auto items-center transition-all duration-1000">
-  <button class="absolute xl:top-[26px] right-10 closeModal">
+  class="absolute z-[-1] overflow-hidden opacity-0 top-0 left-0 xl:h-screen h-full w-screen bg-[#020D1966] backdrop-blur flex justify-center mx-auto xl:items-center items-center transition-all duration-1000">
+  <button class="absolute xl:top-[26px] top-0 xl:right-10 right-2.5 closeModal">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_2048_387)">
         <path d="M0.999512 1L22.9995 23M0.999512 23L22.9995 1" stroke="#FFC700" stroke-opacity="0.8" stroke-width="3" />
@@ -13,9 +13,9 @@
     </svg>
   </button>
 
-  <div class="container-main flex justify-center items-center relative w-[1200px]">
+  <div class="container-main flex justify-center items-center relative xl:w-[1200px] w-full">
     <button
-      class="border border-[#FFC70066] rounded-full flex justify-center items-center rotate-180 w-[66px] h-[66px] absolute left-2.5 -translate-x-full top-1/2 -translate-y-1/2 z-[2] prevGalleryMainSlider">
+      class="border border-[#FFC70066] rounded-full xl:flex hidden justify-center items-center rotate-180 w-[66px] h-[66px] absolute left-2.5 -translate-x-full top-1/2 -translate-y-1/2 z-[2] prevGalleryMainSlider">
       <svg width="28" height="46" viewBox="0 0 28 46" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M4.41651 -2.01072e-06L27.4165 23L4.4165 46L0.334006 41.9175L19.2515 23L0.334009 4.0825L4.41651 -2.01072e-06Z"
@@ -24,7 +24,7 @@
     </button>
 
     <button
-      class="border border-[#FFC70066] rounded-full flex justify-center items-center w-[66px] h-[66px] absolute right-2.5 translate-x-full top-1/2 -translate-y-1/2 z-[2] nextGalleryMainSlider">
+      class="border border-[#FFC70066] rounded-full xl:flex hidden justify-center items-center w-[66px] h-[66px] absolute right-2.5 translate-x-full top-1/2 -translate-y-1/2 z-[2] nextGalleryMainSlider">
       <svg width="28" height="46" viewBox="0 0 28 46" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M4.41651 -2.01072e-06L27.4165 23L4.4165 46L0.334006 41.9175L19.2515 23L0.334009 4.0825L4.41651 -2.01072e-06Z"
@@ -33,12 +33,12 @@
     </button>
     <div class="overflow-hidden" id="previewGalleryMainSlider">
       <div class="swiper-wrapper">
-        <img class="!h-[700px] swiper-slide" src="imgGallerySlider1.png" alt="Галлерея">
-        <img class="!h-[700px] swiper-slide" src="imgGallerySlider2.png" alt="Галлерея">
-        <img class="!h-[700px] swiper-slide" src="imgGallerySlider3.png" alt="Галлерея">
-        <img class="!h-[700px] swiper-slide" src="imgGallerySlider1.png" alt="Галлерея">
-        <img class="!h-[700px] swiper-slide" src="imgGallerySlider2.png" alt="Галлерея">
-        <img class="!h-[700px] swiper-slide" src="imgGallerySlider3.png" alt="Галлерея">
+        <img class="xl:!h-[700px] h-auto xl:object-fill object-contain swiper-slide" src="imgGallerySlider1.png" alt="Галлерея">
+        <img class="xl:!h-[700px] h-auto xl:object-fill object-contain swiper-slide" src="imgGallerySlider2.png" alt="Галлерея">
+        <img class="xl:!h-[700px] h-auto xl:object-fill object-contain swiper-slide" src="imgGallerySlider3.png" alt="Галлерея">
+        <img class="xl:!h-[700px] h-auto xl:object-fill object-contain swiper-slide" src="imgGallerySlider1.png" alt="Галлерея">
+        <img class="xl:!h-[700px] h-auto xl:object-fill object-contain swiper-slide" src="imgGallerySlider2.png" alt="Галлерея">
+        <img class="xl:!h-[700px] h-auto xl:object-fill object-contain swiper-slide" src="imgGallerySlider3.png" alt="Галлерея">
       </div>
     </div>
   </div>

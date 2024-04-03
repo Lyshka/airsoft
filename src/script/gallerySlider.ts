@@ -3,9 +3,17 @@ import "swiper/css";
 
 const gallerySlider = new Swiper("#gallerySlider", {
   slidesPerView: 1,
-  spaceBetween: 46,
-  loop: true,
   initialSlide: 2,
+  breakpoints: {
+    1368: {
+      spaceBetween: 46,
+      loop: true,
+    },
+    0: {
+      spaceBetween: 10,
+      loop: false,
+    }
+  },
 });
 
 // Добавление обработчиков событий для стрелок вперед и назад
@@ -29,6 +37,15 @@ const previewGalleryMainSlider = new Swiper("#previewGalleryMainSlider", {
   slidesPerView: 1,
   loop: true,
   effect: "fade", // Устанавливаем эффект fade
+  height:300,
+  breakpoints: {
+    1368: {
+      spaceBetween: 0,
+    },
+    0: {
+      spaceBetween: 10,
+    }
+  }
 });
 
 const prevPreviewGalleryMainSlider = document.querySelector(
