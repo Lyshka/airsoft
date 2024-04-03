@@ -14,6 +14,10 @@
   @apply top-[79px] translate-y-0;
 }
 
+#confModal.open {
+  @apply translate-y-0 opacity-100;
+}
+
 @layer base {
   html {
     @apply font-RussoOne text-white bg-[#020D19] overflow-x-hidden scroll-smooth;

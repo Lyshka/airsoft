@@ -6,5 +6,7 @@ import "./script/checked";
 import "./script/selectMap";
 import "./script/aboutModal";
 import "./script/formAndResponseModal";
-import "./script/checkErrorForm";
+// import "./script/checkErrorForm";
 import "./script/header";
+import "./script/conf";
+import "./script/formSubmit";
