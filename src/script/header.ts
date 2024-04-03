@@ -4,21 +4,37 @@ const openMobileMenu = document.getElementById(
 const closeMobileMenu = document.getElementById(
   "closeMobileMenu"
 ) as HTMLButtonElement;
-const headerMobileMenu = document.getElementById("headerMobileMenu");
-
+const headerMobileMenu = document.getElementById(
+  "headerMobileMenu"
+) as HTMLElement;
 const HTMLELEMENT = document.querySelector("html") as HTMLElement;
 
-openMobileMenu.onclick = () => {
+const linkUrlMobileMenuElements = [
+  ...headerMobileMenu.querySelectorAll("a"),
+] as HTMLAnchorElement[];
+
+const openMobileMenuHandle = () => {
   headerMobileMenu?.classList.add("open");
   openMobileMenu.style.display = "none";
   closeMobileMenu.style.display = "block";
   HTMLELEMENT.style.overflowY = "hidden";
 };
 
-closeMobileMenu.onclick = () => {
+const closeMobileMenuHandle = () => {
   headerMobileMenu?.classList.remove("open");
   openMobileMenu.style.display = "block";
   closeMobileMenu.style.display = "none";
   HTMLELEMENT.style.overflowY = "scroll";
-
 };
+
+openMobileMenu.onclick = () => {
+  openMobileMenuHandle();
+};
+
+closeMobileMenu.onclick = () => {};
+
+linkUrlMobileMenuElements.map((linkUrlMobile) => {
+  linkUrlMobile.onclick = () => {
+    closeMobileMenuHandle();
+  };
+});
