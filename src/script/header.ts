@@ -31,7 +31,9 @@ openMobileMenu.onclick = () => {
   openMobileMenuHandle();
 };
 
-closeMobileMenu.onclick = () => {};
+closeMobileMenu.onclick = () => {
+  closeMobileMenuHandle();
+};
 
 linkUrlMobileMenuElements.map((linkUrlMobile) => {
   linkUrlMobile.onclick = () => {
