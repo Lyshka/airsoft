@@ -1,5 +1,4 @@
-import axios from "axios";
-import { Response } from "../types/response";
+import { sendTelegram } from "./sendTelegram";
 
 const allFormElements = [
   ...document.querySelectorAll("form"),
@@ -55,55 +54,27 @@ allFormElements.map((formElement) => {
         "modalRequestCallResponse"
       );
 
-      const {
-        data: { error, success },
-      } = await axios.post<Response>(
-        `${window.location.origin}/form.php`,
-        {
-          formName: typeForm,
-          tel: valueInput,
-          name: nameValue,
-          target: "Заказать звонок",
-        },
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-        }
-      );
+      const message = `
+<b>Телефон: </b> ${valueInput}
+<b>Имя: </b> ${nameValue}
+<b>Оставить заявку: </b> Заказать звонок`;
 
-      if (success) {
+      sendTelegram(message).then(() => {
         modalRequestCallResponse?.classList.add("open");
-      } else {
-        console.error(error);
-      }
+      });
     } else {
       const modalSignUpResponse = document.getElementById(
         "modalSignUpResponse"
       );
 
-      const {
-        data: { error, success },
-      } = await axios.post<Response>(
-        `${window.location.origin}/form.php`,
-        {
-          formName: typeForm,
-          tel: valueInput,
-          name: nameValue,
-          target: "Оставить заявку",
-        },
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-        }
-      );
+      const message = `
+      <b>Телефон: </b> ${valueInput}
+      <b>Имя: </b> ${nameValue}
+      <b>Оставить заявку: </b> Оставить заявку`;
 
-      if (success) {
+      sendTelegram(message).then(() => {
         modalSignUpResponse?.classList.add("open");
-      } else {
-        console.error(error);
-      }
+      });
     }
 
     (event.target as HTMLFormElement).reset();
